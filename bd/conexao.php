@@ -1,21 +1,21 @@
 <?php
-    
+
     function conexaoMysql(){
-        $user = 'localhost';
+
+        $servidor = 'localhost';
         $usuario = 'root';
         $senha = 'bcd127';
         $database = 'dbUsuarios';
-        
-        
-        if($conexao = mysqli_connect($user, $usuario, $senha, $database)){
+
+        // $conexao = mysqli_connect($servidor, $usuario, $senha, $database)
+
+        if($conexao = mysqli_connect($servidor, $usuario, $senha, $database)){
             return $conexao;
-//            echo('foi a conexao com sucesso');
+            // echo('foi a conexao');
         }else{
-            
-            echo('não foi a conexao');
+            echo('Não foi a conexão');
         }
     }
-
 
 
 
