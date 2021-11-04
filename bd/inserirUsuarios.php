@@ -2,8 +2,8 @@
 
 
 
- 
-require_once('../bd/conexao.php');
+//  require_once(SRC.'controles/recebeUsuarios');
+require_once('../bd/conexaoUsuarios.php');
 
 
     function inserir($arrayUsuarios)

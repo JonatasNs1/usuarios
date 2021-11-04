@@ -1,5 +1,5 @@
 <?php
-   require_once('../configuracoes/config.php');
+   require_once('../configuracoes/configUsuarios.php');
 
    require_once(SRC .'bd/inserirUsuarios.php');
    require_once(SRC.'bd/update.php');
@@ -26,8 +26,11 @@
           
           $nome = $_POST['nome'];
           $login = $_POST['login'];
-          $senha = $_POST['senha'];
+           $senha = md5($_POST['senha']);
+        // $cript = sha1($senha.uniqid(time())); 
+
       
+        
           
          
       if($nome == null || $login == null || $senha == null)
@@ -72,7 +75,9 @@
                       <script>
                           alert('". ERRO ."');
                            window.history.back();
-                      </script>
+        7
+        
+        </script>
                   ");
               }elseif(strtoupper($_GET['modo']) == 'ATUALIZAR')
               { 
@@ -95,6 +100,7 @@
                   
               }
           }
+
       
           
       }
@@ -106,4 +112,4 @@
    
 
 
-?>
+?>0

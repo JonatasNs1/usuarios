@@ -6,7 +6,7 @@
 
 
 
-    require_once('../configuracoes/config.php');
+    require_once('../configuracoes/configUsuarios.php');
 
 
 require_once(SRC .'bd/listarUsuarios.php');

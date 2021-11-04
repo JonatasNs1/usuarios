@@ -5,7 +5,9 @@ const usuario = ('root');
 const senha = ('bcd127');
 const database =('dbUsuarios');
 
-define ('SRC', $_SERVER['DOCUMENT_ROOT'].'/usuarios/usuarios/'); 
+// define ('SRC', $_SERVER['DOCUMENT_ROOT'].'/usuarios/usuarios/'); 
+
+define ('SRC', $_SERVER['DOCUMENT_ROOT'].'/ds2t20212/usuarios/'); 
 
 const BD_MSG_EXCLUIR = "
 <script> 

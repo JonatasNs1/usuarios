@@ -1,7 +1,7 @@
 <?php
 
     // require_once(SRC.'bd/conexao.php');
-    require_once('../bd/conexao.php');
+    require_once('../bd/conexaoUsuarios.php');
     function excluir($idUsuarios){
         $sql = "delete from tblUsuarios where idUsuarios =".$idUsuarios;
 

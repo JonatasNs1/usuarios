@@ -1,5 +1,5 @@
 <?php
-    require_once('../bd/conexao.php');
+    require_once('../bd/conexaoUsuarios.php');
 
     // function edita($arrayCategoria){
     //     $sql = "update tblcategorias set

@@ -15,9 +15,9 @@
     $modo = (string) "Salvar";
 
 
-    require_once('configuracoes/config.php');
+    require_once('configuracoes/configUsuarios.php');
 
-    require_once('bd/conexao.php');
+    require_once('bd/conexaoUsuarios.php');
     conexaoMysql();
 
     require_once(SRC. 'controles/exibirDadosUsuarios.php');
@@ -80,7 +80,7 @@
                             <label> Senha: </label>
                         </div>
                         <div class="entradaDeDados">
-                            <input type="password" name="senha" value="<?=$senha?>" placeholder="Digite sua Senha" maxlength="50">
+                            <input type="password" name="senha" value="" placeholder="Digite sua Senha" maxlength="50">
                         </div>
                     </div>
                 

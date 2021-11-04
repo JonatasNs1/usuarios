@@ -2,7 +2,7 @@
 
 
 
-require_once(SRC.'bd/conexao.php');
+require_once(SRC.'bd/conexaoUsuarios.php');
 
 function listar(){
 
